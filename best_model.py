@@ -38,7 +38,7 @@ from imblearn.pipeline import Pipeline
 #######################################
 # Importing dataset
 #######################################
-df = pd.read_csv("data/framingham_cleaned.csv")
+df = pd.read_csv("data/framingham_PROPERLY_cleaned.csv")
 
 
 ##########################################################
