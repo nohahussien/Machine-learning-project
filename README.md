@@ -163,25 +163,17 @@ framingham-heart-study/
 │                          # Performance analysis
 │
 ├── src/
-│   ├── __init__.py
-│   ├── Full_history.py       # Data cleaning functions
-│   ├── best_model.py  and Models.py # Model training pipeline
+│   ├──Full_history.py       # Data cleaning functions
+│   ├──Models.py              # All models tried
+│   ├── best_model.py         # best Model training pipeline
 
 │
 ├── models/
 │   └── best_model.joblib           # Saved trained model
 │
 ├── app/
-│   ├── app.py                      # Streamlit web applicatio
-│
-├── tests/
-│   ├── test_data_preprocessing.py
-│   ├── test_model_training.py
-│   └── test_evaluation.py
-│
-├── results/
-│   ├── confusion_matrix.png
-│
+│   ├── app.py                      # Streamlit web application
+
 └── README.md                       # Project documentation
 
 
@@ -286,13 +278,7 @@ Local Deployment:
 bash
 streamlit run app.py
 Open browser to: http://localhost:8501
-Cloud Deployment (Optional):
 
-Deploy to Streamlit Cloud
-
-Deploy to Heroku
-
-Deploy to AWS/GCP
 
 📊 Visualizations Generated
 1. Data Distribution Visualizations:
@@ -306,8 +292,6 @@ Education Level Bar Chart: Color-coded with legend
 
 2. Model Performance Visualizations:
 Confusion Matrix: With counts and percentages
-
-ROC Curves: Model discrimination ability
 
 Precision-Recall Curves: For imbalanced classification
 
@@ -376,16 +360,7 @@ Risk stratification: Effectively identifies high-risk groups for targeted interv
 Preventive focus: Model emphasizes modifiable risk factors (smoking, BP, cholesterol)
 
 🎯 Future Improvements
-Short-term Enhancements (1-3 months):
-Feature Engineering:
 
-Create interaction terms (age × cholesterol, BP × diabetes)
-
-Develop composite risk scores
-
-Add temporal trends for longitudinal data
-
-Model Improvements:
 
 Implement ensemble of best models
 
@@ -395,9 +370,6 @@ Include confidence intervals for predictions
 
 Deployment Enhancements:
 
-REST API for integration with healthcare systems
-
-Mobile application version
 
 Multi-language support
 
@@ -410,41 +382,7 @@ Time-series analysis for longitudinal prediction
 
 Transfer learning from larger medical datasets
 
-Integration Features:
 
-Wearable device integration (Fitbit, Apple Watch)
-
-Electronic Health Record (EHR) integration
-
-Telemedicine platform compatibility
-
-Clinical Validation:
-
-Prospective validation studies
-
-Multi-center clinical trials
-
-Regulatory compliance (FDA, CE marking)
-
-📚 References & Citations
-Academic References:
-Framingham Heart Study Original Papers:
-
-Dawber TR, Meadors GF, Moore FE Jr. (1951) Epidemiological approaches to heart disease: the Framingham Study. American Journal of Public Health
-
-Kannel WB, et al. (1961) Factors of risk in the development of coronary heart disease
-
-Methodological References:
-
-Chawla, N. V., et al. (2002) SMOTE: Synthetic Minority Over-sampling Technique
-
-Pedregosa, F., et al. (2011) Scikit-learn: Machine Learning in Python
-
-Clinical Guidelines:
-
-American Heart Association (AHA) Guidelines
-
-European Society of Cardiology (ESC) Guidelines
 
 Dataset Source:
 Framingham Heart Study: https://framinghamheartstudy.org/
